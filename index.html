@@ -1,0 +1,295 @@
+						
+						<!DOCTYPE html>
+<html lang="es">
+<head>
+				<meta charset="UTF-8">
+				<title>Rescate Gicsa</title>
+				
+				<style>
+								button {
+								border:0;
+								color:orange;
+								background:red;
+								}
+				</style>
+</head>
+<body>
+				<center>
+				<textarea cols="30" rows="30">
+								
+				</textarea>
+				
+				
+				<h1>Sistema Rescate accion</h1>
+
+<button onclick="re()">
+Rescate accion sistema click
+</button>
+
+<br><br>
+<a href="seccionrescate.html">Seccion rescate positions</a>
+	
+<script>	
+				function re (){
+				
+				decision=prompt("Elige una opcion \n1.Estrategia Aeromex\n2.Estrategia Famsa");
+				
+				if(decision==1){
+				cantidadacc=prompt("Ingresa la catidad de acciones que tienes al momento ");
+				
+liquidezfamsa=prompt("Ingrese la liquidez que tienes actualmente en estrategia para famsa");
+
+Inicializacion=prompt("Ingresa la inicializacion del costo de la accion famsa al momento (recuerdad que inicialozacio hace mencion a cada nueva compra en diferente precio lo ideas es que sea en bajo para dejar un porcentaje expolvoreo");
+
+	
+
+inicio2=prompt("Ingresa el inicio2 (sólo si lo hay de lo contrario dejar en blanco o cancelar");	
+				
+inicio2neg=prompt("Ingresa el inicio 2 neg(sólo si lo hay de lo contrario dejar en blanco o cancelar");					
+
+inicio3=prompt("Ingresa el inicio 3(sólo si lo hay de lo contrario dejar en blanco o cancelar");	
+				
+	inicio3neg=prompt("Ingresa el inicio 3  neg(sólo si lo hay de lo contrario dejar en blanco o cancelar");		
+
+inicio4=prompt("Ingresa el inicio 4 (sólo si lo hay de lo contrario dejar en blanco o cancelar");	
+				
+		inicio4neg=prompt("Ingresa el inicio 4 neg (sólo si lo hay de lo contrario dejar en blanco o cancelar");	
+						
+							
+				document.write("<h3>Sistema Rescate Gicsa</h3><h5>(Comisiones GBM+) &nbsp &nbsp  &nbsp Cantidad de liquidez en estrategia Famsa</h5>");		
+				document.write("P1:\t $"+0.25*Inicializacion/100);
+				document.write("<br>Cantidad acciones al momento:\t"+cantidadacc);
+				document.write("<br>Mulplicado en dinero:"+cantidadacc*Inicializacion);
+				
+				document.write("<br>P2:\t $"+0.25*inicio2neg/100);
+				
+				document.write("&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp	");
+				document.write (liquidezfamsa);
+						
+					
+					document.write("<br><br><br> <select><option>\tDescripcion de estrategia: La idea principal es incrementar de una determinada cantidad de liquidez, misma que no deba ser extinguida, mas en caso que este disminutendo su valor de liquidez con el fin de no quedarnos en $0 la idea es que de las acciones incunadas fuera de la cantidad esperada por ciertas cantidades de dinero al ser superadas por ejemplo si tengo un capital de $2 y una accionde x empresa cuesta $1 la idea es que invierta ese peso y que tenga otro peso para poder rescatar hasta por un total de $1 en caida su valor, digamos que tengo esa inversion de $1 en una accion esa se inicializa al precio que la compre por primera vez de alli si sus precios fluctuan a -tanto % entonces significa que estoy perdiendo dinero por devaluación de oferta; entonces cada 1p, 2p,3p,4p que representan una seccion cada vez que su postura sea bajista digamos por 4 veces cayo en la seccion, un total por postura de .10 (10%) entonces si no tuviera la reserva de $1 no habria como sostener esa caida, pero como la tengo, puedo sostener cada que caiga .10 ¿Esto quiere decir que yo estoy perdiendo dinero no por que si segun las matemáticas si utilizo 1 para reemplazar 1 es igual a una déficit si o si de 1 no?<br>R-Esto no es asi, ya que la ignorancia es la verdadera pobreza!!! quiero decir que si ignoro que hay un porcentaje escondido entre las cantidades que puedan amparar las cantidades caidas y evitar que cada accion pierda su valor proporcional en base a cada nueva compra posterior a inicializacion (primer compra) entonces se puede mantener el rescate al 100% sin devaluación de la empresa aunque esta cayera en bolsa hasta por un 100% su valor o en parte proporcional, mientras empata y genera plus valia.Al referirme como empate hago mencion a que las que no tenian el mismo valor de las de inicialozacion primera en su maximo historico del día  deberan adaptarse y enrolarse a la hora de generar ganacia hasta que llegue al maximo historico del dia o graduaomente en base a las cantidades que entraron por determinados valores variados en su plus valia una vez recuperada su inversión  entonces cobrar lo proporcional en retorno (vendiendo lp contabilizado por esas cantidades o biem esperar a que suba al 100% y supere su valor que esto podria demorar mas de lo esperado y en caso de necesitar liquidez no la tendrás.<br>La lógica de esta estrategia dice que si entre las cantidades que se restan como: comisiones del broker por compra y venta, los resagos que lad paguen, el incremento de acciones de una misma fuente interna y el restaurar la liquidez con que se inicio... Deberan pasar  2 efectos:(1)Incrementar lad acciones mismas que deben sugregar las devaluacionesy emptar por unas cuantad exttas las que se concideran ganacias y (2) Si el sistema tras estas maniobrad restablece la liquidez se suman las dos (acciones y liquidez) para genersr una formula llamada (Incrementos por ganancia en proceso IPEP) si resuotara que el proceso dio resuotado el siguiente paso es observar lad posibles causas que generaron dicha formula que genero ganacias y repetirla concantidades mas grandes cada vez esta es la manera de incrementar el dinero desde el interior mas si dicha formula nogenera valores negativos perp los positivos en ganancia resuotaran ser muy pocas a corto plazo y si la idea es incrementar desde el exterior, se debera hacer para el fin de conseguir que lasbganancias sesn mas altas. debes observar cuanto pagaste en el dia en comisiones, cuanto se devaluo o se gano y equilibrarsus valores.</option></select>");	
+						
+						document.write("<h5><br>(Maximos historicos alza) &nbsp &nbsp &nbsp  &nbsp Ganancias por plus valia</h5>");
+	
+		
+			var d=new Date();
+var dia=new Array(7);
+dia[0]="Domingo";
+dia[1]="Lunes";
+dia[2]="Martes";
+dia[3]="Miercoles";
+dia[4]="Jueves";
+dia[5]="Viernes";
+dia[6]="Sabado";
+document.write("Hoy es: " + dia[d.getDay()]);
+			
+			var d = new Date();
+		document.write("\t"+d.getDate());
+		document.write("\tDia de operación<br>");
+		
+var d = new Date();
+document.write(d.getHours());
+document.write(":\t");
+
+
+var d = new Date(); document.write(d.getMinutes());
+document.write(":\t");
+
+var d = new Date(); document.write(d.getFullYear());
+
+		
+		
+
+document.write("<br><br>p4\t✅\tNewmh &nbsp &nbsp &nbsp &nbsp &nbsp"+inicio4);	
+
+		
+
+document.write("<br>");		
+	document.write("p3\t✅"+inicio3+"&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp\tGan");
+	document.write(inicio3-inicio4);
+
+document.write("<br>");		
+			
+
+	document.write("p2\t✅"+inicio2+"📶&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspGan")
+	document.write(inicio2-inicio3);
+
+document.write("<br>");		
+				
+	document.write("p1\t✅"+Inicializacion+"📶&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspEmp");
+	
+	document.write(Inicializacion-inicio2neg);
+	
+	//al alza seccion
+
+document.write("<hr>");
+
+
+document.write("<h5>Mínimos históricos bajas)&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Sobrante al max hist anterior</h5>");
+document.write("p1:\t✅"+Inicializacion+"⤵");
+document.write("&nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp");
+			document.write (	inicio2neg-Inicializacion);
+
+
+
+
+
+document.write("<br>");		
+	document.write("p2\t✅"+inicio2neg);
+	document.write("&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ");
+document.write(inicio2neg-inicio3neg);
+
+
+document.write("<br>");		
+	
+	document.write("p3\t✅"+inicio3neg);
+	document.write("&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ");
+document.write(inicio3neg-inicio4neg);
+
+
+document.write("<br>");		
+
+document.write("p3\t✅"+inicio4neg);
+}
+
+if(decision==2){
+
+cantidadacc=prompt("Ingresa la catidad de acciones que tienes al momento ");
+				
+liquidezfamsa=prompt("Ingrese la liquidez que tienes actualmente en estrategia para famsa");
+
+Inicializacion=prompt("Ingresa la inicializacion del costo de la accion famsa al momento (recuerdad que inicialozacio hace mencion a cada nueva compra en diferente precio lo ideas es que sea en bajo para dejar un porcentaje expolvoreo");
+
+	
+
+inicio2=prompt("Ingresa el inicio2 (sólo si lo hay de lo contrario dejar en blanco o cancelar");	
+				
+inicio2neg=prompt("Ingresa el inicio 2 neg(sólo si lo hay de lo contrario dejar en blanco o cancelar");					
+
+inicio3=prompt("Ingresa el inicio 3(sólo si lo hay de lo contrario dejar en blanco o cancelar");	
+				
+	inicio3neg=prompt("Ingresa el inicio 3  neg(sólo si lo hay de lo contrario dejar en blanco o cancelar");		
+
+inicio4=prompt("Ingresa el inicio 4 (sólo si lo hay de lo contrario dejar en blanco o cancelar");	
+				
+		inicio4neg=prompt("Ingresa el inicio 4 neg (sólo si lo hay de lo contrario dejar en blanco o cancelar");	
+						
+							
+				document.write("<h3>Sistema Rescate Gicsa</h3><h5>(Comisiones GBM+) &nbsp &nbsp  &nbsp Cantidad de liquidez en estrategia Famsa</h5>");		
+				document.write("P1:\t $"+0.25*Inicializacion/100);
+				document.write("<br>Cantidad acciones al momento:\t"+cantidadacc);
+				document.write("<br>Mulplicado en dinero:"+cantidadacc*Inicializacion);
+				
+				document.write("<br>P2:\t $"+0.25*inicio2neg/100);
+				
+				document.write("&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp	");
+				document.write (liquidezfamsa);
+						
+					
+					document.write("<br><br><br> <select><option>\tDescripcion de estrategia: La idea principal es incrementar de una determinada cantidad de liquidez, misma que no deba ser extinguida, mas en caso que este disminutendo su valor de liquidez con el fin de no quedarnos en $0 la idea es que de las acciones incunadas fuera de la cantidad esperada por ciertas cantidades de dinero al ser superadas por ejemplo si tengo un capital de $2 y una accionde x empresa cuesta $1 la idea es que invierta ese peso y que tenga otro peso para poder rescatar hasta por un total de $1 en caida su valor, digamos que tengo esa inversion de $1 en una accion esa se inicializa al precio que la compre por primera vez de alli si sus precios fluctuan a -tanto % entonces significa que estoy perdiendo dinero por devaluación de oferta; entonces cada 1p, 2p,3p,4p que representan una seccion cada vez que su postura sea bajista digamos por 4 veces cayo en la seccion, un total por postura de .10 (10%) entonces si no tuviera la reserva de $1 no habria como sostener esa caida, pero como la tengo, puedo sostener cada que caiga .10 ¿Esto quiere decir que yo estoy perdiendo dinero no por que si segun las matemáticas si utilizo 1 para reemplazar 1 es igual a una déficit si o si de 1 no?<br>R-Esto no es asi, ya que la ignorancia es la verdadera pobreza!!! quiero decir que si ignoro que hay un porcentaje escondido entre las cantidades que puedan amparar las cantidades caidas y evitar que cada accion pierda su valor proporcional en base a cada nueva compra posterior a inicializacion (primer compra) entonces se puede mantener el rescate al 100% sin devaluación de la empresa aunque esta cayera en bolsa hasta por un 100% su valor o en parte proporcional, mientras empata y genera plus valia.Al referirme como empate hago mencion a que las que no tenian el mismo valor de las de inicialozacion primera en su maximo historico del día  deberan adaptarse y enrolarse a la hora de generar ganacia hasta que llegue al maximo historico del dia o graduaomente en base a las cantidades que entraron por determinados valores variados en su plus valia una vez recuperada su inversión  entonces cobrar lo proporcional en retorno (vendiendo lp contabilizado por esas cantidades o biem esperar a que suba al 100% y supere su valor que esto podria demorar mas de lo esperado y en caso de necesitar liquidez no la tendrás.<br>La lógica de esta estrategia dice que si entre las cantidades que se restan como: comisiones del broker por compra y venta, los resagos que lad paguen, el incremento de acciones de una misma fuente interna y el restaurar la liquidez con que se inicio... Deberan pasar  2 efectos:(1)Incrementar lad acciones mismas que deben sugregar las devaluacionesy emptar por unas cuantad exttas las que se concideran ganacias y (2) Si el sistema tras estas maniobrad restablece la liquidez se suman las dos (acciones y liquidez) para genersr una formula llamada (Incrementos por ganancia en proceso IPEP) si resuotara que el proceso dio resuotado el siguiente paso es observar lad posibles causas que generaron dicha formula que genero ganacias y repetirla concantidades mas grandes cada vez esta es la manera de incrementar el dinero desde el interior mas si dicha formula nogenera valores negativos perp los positivos en ganancia resuotaran ser muy pocas a corto plazo y si la idea es incrementar desde el exterior, se debera hacer para el fin de conseguir que lasbganancias sesn mas altas. debes observar cuanto pagaste en el dia en comisiones, cuanto se devaluo o se gano y equilibrarsus valores.</option></select>");	
+						
+						document.write("<h5><br>(Maximos historicos alza) &nbsp &nbsp &nbsp  &nbsp Ganancias por plus valia</h5>");
+	
+		
+			var d=new Date();
+var dia=new Array(7);
+dia[0]="Domingo";
+dia[1]="Lunes";
+dia[2]="Martes";
+dia[3]="Miercoles";
+dia[4]="Jueves";
+dia[5]="Viernes";
+dia[6]="Sabado";
+document.write("Hoy es: " + dia[d.getDay()]);
+			
+			var d = new Date();
+		document.write("\t"+d.getDate());
+		document.write("\tDia de operación<br>");
+		
+var d = new Date();
+document.write(d.getHours());
+document.write(":\t");
+
+
+var d = new Date(); document.write(d.getMinutes());
+document.write(":\t");
+
+var d = new Date(); document.write(d.getFullYear());
+
+		
+		
+
+document.write("<br><br>p4\t✅\tNewmh &nbsp &nbsp &nbsp &nbsp &nbsp"+inicio4);	
+
+		
+
+document.write("<br>");		
+	document.write("p3\t✅"+inicio3+"&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp\tGan");
+	document.write(inicio3-inicio4);
+
+document.write("<br>");		
+			
+
+	document.write("p2\t✅"+inicio2+"📶&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspGan")
+	document.write(inicio2-inicio3);
+
+document.write("<br>");		
+				
+	document.write("p1\t✅"+Inicializacion+"📶&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspEmp");
+	
+	document.write(Inicializacion-inicio2neg);
+	
+	//al alza seccion
+
+document.write("<hr>");
+
+
+document.write("<h5>Mínimos históricos bajas)&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Sobrante al max hist anterior</h5>");
+document.write("p1:\t✅"+Inicializacion+"⤵");
+document.write("&nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp");
+			document.write (	inicio2neg-Inicializacion);
+
+
+
+
+
+document.write("<br>");		
+	document.write("p2\t✅"+inicio2neg);
+	document.write("&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ");
+document.write(inicio2neg-inicio3neg);
+
+
+document.write("<br>");		
+	
+	document.write("p3\t✅"+inicio3neg);
+	document.write("&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ");
+document.write(inicio3neg-inicio4neg);
+
+
+document.write("<br>");		
+
+document.write("p3\t✅"+inicio4neg);
+
+
+
+
+}
+
+else {
+alert("Por favor elige una opcion\n1.Estrategia Aeromex\n2.Estrategia Famsa\n⚠Asegurate que aun este disponible");
+}
+
+}
+
+
+</script>			
+	
+	
+				</center>
+				
+				
+</body>
+</html>	
+				
+		
+	
