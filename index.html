@@ -1,5 +1,21 @@
-						
-						<!DOCTYPE html>
+										
+									
+										
+										
+										
+										
+										
+									
+										
+										
+										
+										
+										
+										
+									
+										
+										
+				<!DOCTYPE html>
 <html lang="es">
 <head>
 				<meta charset="UTF-8">
@@ -31,265 +47,879 @@ Rescate accion sistema click
 	
 <script>	
 				function re (){
-				
+
+for(i=0;i<4; i++){				
 				decision=prompt("Elige una opcion \n1.Estrategia Aeromex\n2.Estrategia Famsa");
 				
 				if(decision==1){
-				cantidadacc=prompt("Ingresa la catidad de acciones que tienes al momento ");
-				
-liquidezfamsa=prompt("Ingrese la liquidez que tienes actualmente en estrategia para famsa");
 
-Inicializacion=prompt("Ingresa la inicializacion del costo de la accion famsa al momento (recuerdad que inicialozacio hace mencion a cada nueva compra en diferente precio lo ideas es que sea en bajo para dejar un porcentaje expolvoreo");
+negpos=prompt ("Elegir negativo o positivo en posiciones\n1.Negativo\n2.Positivo");
 
+if (negpos==1){
+
+elegirposition=prompt("Elige la position en que vas\n1.P1\n2.P2\n3.P3\n4.P4");
 	
-
-inicio2=prompt("Ingresa el inicio2 (sólo si lo hay de lo contrario dejar en blanco o cancelar");	
+if (elegirposition==1){
+			cantidadacc=prompt("Ingresa la catidad de acciones que tienes al momento ");
 				
-inicio2neg=prompt("Ingresa el inicio 2 neg(sólo si lo hay de lo contrario dejar en blanco o cancelar");					
+liquidez=prompt("Ingrese la liquidez que tienes actualmente en estrategia acciones");
 
-inicio3=prompt("Ingresa el inicio 3(sólo si lo hay de lo contrario dejar en blanco o cancelar");	
-				
-	inicio3neg=prompt("Ingresa el inicio 3  neg(sólo si lo hay de lo contrario dejar en blanco o cancelar");		
+Inicializacion=prompt("Ingresa la inicializacion del costo de la accion (p1)");
 
-inicio4=prompt("Ingresa el inicio 4 (sólo si lo hay de lo contrario dejar en blanco o cancelar");	
-				
-		inicio4neg=prompt("Ingresa el inicio 4 neg (sólo si lo hay de lo contrario dejar en blanco o cancelar");	
-						
-							
-				document.write("<h3>Sistema Rescate Gicsa</h3><h5>(Comisiones GBM+) &nbsp &nbsp  &nbsp Cantidad de liquidez en estrategia Famsa</h5>");		
+totale=prompt("Ingresa el total que aparece en tu estrategia");
+
+maxhist=prompt("Ingresa el Máximo Histórico");
+
+incubados=prompt("Ingresa la cantidad nueva de incubados");
+document.write("<h3>Sistema Rescate Gicsa</h3><h5>(Comisiones GBM+) &nbsp &nbsp  &nbsp Cantidad de liquidez en estrategia </h5>");		
 				document.write("P1:\t $"+0.25*Inicializacion/100);
 				document.write("<br>Cantidad acciones al momento:\t"+cantidadacc);
 				document.write("<br>Mulplicado en dinero:"+cantidadacc*Inicializacion);
 				
-				document.write("<br>P2:\t $"+0.25*inicio2neg/100);
-				
-				document.write("&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp	");
-				document.write (liquidezfamsa);
-						
 					
-					document.write("<br><br><br> <select><option>\tDescripcion de estrategia: La idea principal es incrementar de una determinada cantidad de liquidez, misma que no deba ser extinguida, mas en caso que este disminutendo su valor de liquidez con el fin de no quedarnos en $0 la idea es que de las acciones incunadas fuera de la cantidad esperada por ciertas cantidades de dinero al ser superadas por ejemplo si tengo un capital de $2 y una accionde x empresa cuesta $1 la idea es que invierta ese peso y que tenga otro peso para poder rescatar hasta por un total de $1 en caida su valor, digamos que tengo esa inversion de $1 en una accion esa se inicializa al precio que la compre por primera vez de alli si sus precios fluctuan a -tanto % entonces significa que estoy perdiendo dinero por devaluación de oferta; entonces cada 1p, 2p,3p,4p que representan una seccion cada vez que su postura sea bajista digamos por 4 veces cayo en la seccion, un total por postura de .10 (10%) entonces si no tuviera la reserva de $1 no habria como sostener esa caida, pero como la tengo, puedo sostener cada que caiga .10 ¿Esto quiere decir que yo estoy perdiendo dinero no por que si segun las matemáticas si utilizo 1 para reemplazar 1 es igual a una déficit si o si de 1 no?<br>R-Esto no es asi, ya que la ignorancia es la verdadera pobreza!!! quiero decir que si ignoro que hay un porcentaje escondido entre las cantidades que puedan amparar las cantidades caidas y evitar que cada accion pierda su valor proporcional en base a cada nueva compra posterior a inicializacion (primer compra) entonces se puede mantener el rescate al 100% sin devaluación de la empresa aunque esta cayera en bolsa hasta por un 100% su valor o en parte proporcional, mientras empata y genera plus valia.Al referirme como empate hago mencion a que las que no tenian el mismo valor de las de inicialozacion primera en su maximo historico del día  deberan adaptarse y enrolarse a la hora de generar ganacia hasta que llegue al maximo historico del dia o graduaomente en base a las cantidades que entraron por determinados valores variados en su plus valia una vez recuperada su inversión  entonces cobrar lo proporcional en retorno (vendiendo lp contabilizado por esas cantidades o biem esperar a que suba al 100% y supere su valor que esto podria demorar mas de lo esperado y en caso de necesitar liquidez no la tendrás.<br>La lógica de esta estrategia dice que si entre las cantidades que se restan como: comisiones del broker por compra y venta, los resagos que lad paguen, el incremento de acciones de una misma fuente interna y el restaurar la liquidez con que se inicio... Deberan pasar  2 efectos:(1)Incrementar lad acciones mismas que deben sugregar las devaluacionesy emptar por unas cuantad exttas las que se concideran ganacias y (2) Si el sistema tras estas maniobrad restablece la liquidez se suman las dos (acciones y liquidez) para genersr una formula llamada (Incrementos por ganancia en proceso IPEP) si resuotara que el proceso dio resuotado el siguiente paso es observar lad posibles causas que generaron dicha formula que genero ganacias y repetirla concantidades mas grandes cada vez esta es la manera de incrementar el dinero desde el interior mas si dicha formula nogenera valores negativos perp los positivos en ganancia resuotaran ser muy pocas a corto plazo y si la idea es incrementar desde el exterior, se debera hacer para el fin de conseguir que lasbganancias sesn mas altas. debes observar cuanto pagaste en el dia en comisiones, cuanto se devaluo o se gano y equilibrarsus valores.</option></select>");	
-						
-						document.write("<h5><br>(Maximos historicos alza) &nbsp &nbsp &nbsp  &nbsp Ganancias por plus valia</h5>");
-	
-		
-			var d=new Date();
-var dia=new Array(7);
-dia[0]="Domingo";
-dia[1]="Lunes";
-dia[2]="Martes";
-dia[3]="Miercoles";
-dia[4]="Jueves";
-dia[5]="Viernes";
-dia[6]="Sabado";
-document.write("Hoy es: " + dia[d.getDay()]);
-			
-			var d = new Date();
-		document.write("\t"+d.getDate());
-		document.write("\tDia de operación<br>");
-		
-var d = new Date();
-document.write(d.getHours());
-document.write(":\t");
-
-
-var d = new Date(); document.write(d.getMinutes());
-document.write(":\t");
-
-var d = new Date(); document.write(d.getFullYear());
-
-		
-		
-
-document.write("<br><br>p4\t✅\tNewmh &nbsp &nbsp &nbsp &nbsp &nbsp"+inicio4);	
-
-		
-
-document.write("<br>");		
-	document.write("p3\t✅"+inicio3+"&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp\tGan");
-	document.write(inicio3-inicio4);
-
-document.write("<br>");		
-			
-
-	document.write("p2\t✅"+inicio2+"📶&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspGan")
-	document.write(inicio2-inicio3);
-
-document.write("<br>");		
-				
-	document.write("p1\t✅"+Inicializacion+"📶&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspEmp");
-	
-	document.write(Inicializacion-inicio2neg);
-	
-	//al alza seccion
-
-document.write("<hr>");
-
-
-document.write("<h5>Mínimos históricos bajas)&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Sobrante al max hist anterior</h5>");
-document.write("p1:\t✅"+Inicializacion+"⤵");
-document.write("&nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp");
-			document.write (	inicio2neg-Inicializacion);
+				document.write("&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp	");
+				document.write (liquidez);
 
 
 
+   document.write("<h1>BAJISTA⤵</h1>");
+
+document.write("<br><br><h6>Precio &nbsp &nbsp  Cantidad acciones &nbsp &nbsp Total &nbsp &nbsp Maxhist &nbsp &nbsp Liquidez &nbsp &nbsp incubados</h6>");
+
+document.write ("<br>⬇ &nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ⬇<br><br>");
+
+document.write (Inicializacion);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp"+cantidadacc);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+totale);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+maxhist);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+liquidez);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+incubados);
 
 
-document.write("<br>");		
-	document.write("p2\t✅"+inicio2neg);
-	document.write("&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ");
-document.write(inicio2neg-inicio3neg);
+	}
+//Aquí va ir 1 de p1 llave
 
+if (elegirposition==2){
 
-document.write("<br>");		
-	
-	document.write("p3\t✅"+inicio3neg);
-	document.write("&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ");
-document.write(inicio3neg-inicio4neg);
-
-
-document.write("<br>");		
-
-document.write("p3\t✅"+inicio4neg);
-}
-
-if(decision==2){
+inicio2=prompt("Ingresa el inicio2 (sólo si lo hay de lo contrario dejar en blanco o cancelar");
 
 cantidadacc=prompt("Ingresa la catidad de acciones que tienes al momento ");
 				
-liquidezfamsa=prompt("Ingrese la liquidez que tienes actualmente en estrategia para famsa");
+liquidez=prompt("Ingrese la liquidez que tienes actualmente en estrategia acciones");
 
-Inicializacion=prompt("Ingresa la inicializacion del costo de la accion famsa al momento (recuerdad que inicialozacio hace mencion a cada nueva compra en diferente precio lo ideas es que sea en bajo para dejar un porcentaje expolvoreo");
+totale=prompt("Ingresa el total que aparece en tu estrategia");
 
-	
+maxhist=prompt("Ingresa el Máximo Histórico");
 
-inicio2=prompt("Ingresa el inicio2 (sólo si lo hay de lo contrario dejar en blanco o cancelar");	
+incubados=prompt("Ingresa la cantidad nueva de incubados");
+document.write("<h3>Sistema Rescate Gicsa</h3><h5>(Comisiones GBM+) &nbsp &nbsp  &nbsp Cantidad de liquidez en estrategia </h5>");	
+
+
+document.write("<h3>Sistema Rescate Gicsa</h3><h5>(Comisiones GBM+) &nbsp &nbsp  &nbsp Cantidad de liquidez en estrategia Famsa</h5>");		
+				document.write("P2:\t $"+0.25*inicio2/100);
+				document.write("<br>Cantidad acciones al momento:\t"+cantidadacc);
+				document.write("<br>Mulplicado en dinero:"+cantidadacc*inicio2);
 				
-inicio2neg=prompt("Ingresa el inicio 2 neg(sólo si lo hay de lo contrario dejar en blanco o cancelar");					
+					
+				document.write("&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp	");
+				document.write (liquidez);
+
+   document.write("<h1>BAJISTA⤵</h1>");
+
+document.write("<br><br><h6>Precio &nbsp &nbsp  Cantidad acciones &nbsp &nbsp Total &nbsp &nbsp Maxhist &nbsp &nbsp Liquidez &nbsp &nbsp incubados</h6>");
+
+document.write ("<br>⬇ &nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ⬇<br><br>");
+
+document.write (inicio2);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp"+cantidadacc);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+totale);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+maxhist);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+liquidez);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+incubados);
+
+
+
+}
+//position 2 Aquí va llave
+
+
+				
+if(elegirposition==3){
 
 inicio3=prompt("Ingresa el inicio 3(sólo si lo hay de lo contrario dejar en blanco o cancelar");	
+
+
+
+cantidadacc=prompt("Ingresa la catidad de acciones que tienes al momento ");
 				
-	inicio3neg=prompt("Ingresa el inicio 3  neg(sólo si lo hay de lo contrario dejar en blanco o cancelar");		
+liquidez=prompt("Ingrese la liquidez que tienes actualmente en estrategia acciones");
+
+totale=prompt("Ingresa el total que aparece en tu estrategia");
+
+maxhist=prompt("Ingresa el Máximo Histórico");
+
+incubados=prompt("Ingresa la cantidad nueva de incubados");
+document.write("<h3>Sistema Rescate Gicsa</h3><h5>(Comisiones GBM+) &nbsp &nbsp  &nbsp Cantidad de liquidez en estrategia </h5>");	
+
+
+document.write("<h3>Sistema Rescate Gicsa</h3><h5>(Comisiones GBM+) &nbsp &nbsp  &nbsp Cantidad de liquidez en estrategia acciones</h5>");		
+				document.write("P2:\t $"+0.25*inicio3/100);
+				document.write("<br>Cantidad acciones al momento:\t"+cantidadacc);
+				document.write("<br>Mulplicado en dinero:"+cantidadacc*inicio3);
+				
+					
+				document.write("&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp	");
+				document.write (liquidez);
+
+   document.write("<h1>BAJISTA⤵</h1>");
+
+document.write("<br><br><h6>Precio &nbsp &nbsp  Cantidad acciones &nbsp &nbsp Total &nbsp &nbsp Maxhist &nbsp &nbsp Liquidez &nbsp &nbsp incubados</h6>");
+
+document.write ("<br>⬇ &nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ⬇<br><br>");
+
+document.write (inicio3);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp"+cantidadacc);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+totale);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+maxhist);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+liquidez);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+incubados);
+
+
+}
+//Position 3 aquí va llave
+
+
+if (elegirposition==4){
 
 inicio4=prompt("Ingresa el inicio 4 (sólo si lo hay de lo contrario dejar en blanco o cancelar");	
+
+cantidadacc=prompt("Ingresa la catidad de acciones que tienes al momento ");
 				
-		inicio4neg=prompt("Ingresa el inicio 4 neg (sólo si lo hay de lo contrario dejar en blanco o cancelar");	
-						
-							
-				document.write("<h3>Sistema Rescate Gicsa</h3><h5>(Comisiones GBM+) &nbsp &nbsp  &nbsp Cantidad de liquidez en estrategia Famsa</h5>");		
+liquidez=prompt("Ingrese la liquidez que tienes actualmente en estrategia acciones");
+
+totale=prompt("Ingresa el total que aparece en tu estrategia");
+
+maxhist=prompt("Ingresa el Máximo Histórico");
+
+incubados=prompt("Ingresa la cantidad nueva de incubados");
+document.write("<h3>Sistema Rescate Gicsa</h3><h5>(Comisiones GBM+) &nbsp &nbsp  &nbsp Cantidad de liquidez en estrategia </h5>");	
+
+
+document.write("<h3>Sistema Rescate Gicsa</h3><h5>(Comisiones GBM+) &nbsp &nbsp  &nbsp Cantidad de liquidez en estrategia acciones</h5>");		
+				document.write("P2:\t $"+0.25*inicio4/100);
+				document.write("<br>Cantidad acciones al momento:\t"+cantidadacc);
+				document.write("<br>Mulplicado en dinero:"+cantidadacc*inicio4);
+				
+					
+				document.write("&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp	");
+				document.write (liquidez);
+
+   document.write("<h1>BAJISTA⤵</h1>");
+
+document.write("<br><br><h6>Precio &nbsp &nbsp  Cantidad acciones &nbsp &nbsp Total &nbsp &nbsp Maxhist &nbsp &nbsp Liquidez &nbsp &nbsp incubados</h6>");
+
+document.write ("<br>⬇ &nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ⬇<br><br>");
+
+document.write (inicio4);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp"+cantidadacc);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+totale);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+maxhist);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+liquidez);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+incubados);
+
+
+}
+//Aquí va opcion4 llave
+
+}
+//negativo acceso 1						
+										
+										
+									
+										
+										
+										
+										
+										
+										
+									
+										
+									
+				
+if (negpos==2){	
+
+	elegirposition=prompt("Elige la position en que vas\n1.P1\n2.P2\n3.P3\n4.P4");
+			
+				
+if (elegirposition==1){
+			cantidadacc=prompt("Ingresa la catidad de acciones que tienes al momento ");
+				
+liquidez=prompt("Ingrese la liquidez que tienes actualmente en estrategia acciones");
+
+Inicializacion=prompt("Ingresa la inicializacion del costo de la accion (p1)");
+
+totale=prompt("Ingresa el total que aparece en tu estrategia");
+
+maxhist=prompt("Ingresa el Máximo Histórico");
+
+incubados=prompt("Ingresa la cantidad nueva de incubados");
+document.write("<h3>Sistema Rescate Gicsa</h3><h5>(Comisiones GBM+) &nbsp &nbsp  &nbsp Cantidad de liquidez en estrategia </h5>");		
 				document.write("P1:\t $"+0.25*Inicializacion/100);
 				document.write("<br>Cantidad acciones al momento:\t"+cantidadacc);
 				document.write("<br>Mulplicado en dinero:"+cantidadacc*Inicializacion);
 				
-				document.write("<br>P2:\t $"+0.25*inicio2neg/100);
-				
-				document.write("&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp	");
-				document.write (liquidezfamsa);
-						
 					
-					document.write("<br><br><br> <select><option>\tDescripcion de estrategia: La idea principal es incrementar de una determinada cantidad de liquidez, misma que no deba ser extinguida, mas en caso que este disminutendo su valor de liquidez con el fin de no quedarnos en $0 la idea es que de las acciones incunadas fuera de la cantidad esperada por ciertas cantidades de dinero al ser superadas por ejemplo si tengo un capital de $2 y una accionde x empresa cuesta $1 la idea es que invierta ese peso y que tenga otro peso para poder rescatar hasta por un total de $1 en caida su valor, digamos que tengo esa inversion de $1 en una accion esa se inicializa al precio que la compre por primera vez de alli si sus precios fluctuan a -tanto % entonces significa que estoy perdiendo dinero por devaluación de oferta; entonces cada 1p, 2p,3p,4p que representan una seccion cada vez que su postura sea bajista digamos por 4 veces cayo en la seccion, un total por postura de .10 (10%) entonces si no tuviera la reserva de $1 no habria como sostener esa caida, pero como la tengo, puedo sostener cada que caiga .10 ¿Esto quiere decir que yo estoy perdiendo dinero no por que si segun las matemáticas si utilizo 1 para reemplazar 1 es igual a una déficit si o si de 1 no?<br>R-Esto no es asi, ya que la ignorancia es la verdadera pobreza!!! quiero decir que si ignoro que hay un porcentaje escondido entre las cantidades que puedan amparar las cantidades caidas y evitar que cada accion pierda su valor proporcional en base a cada nueva compra posterior a inicializacion (primer compra) entonces se puede mantener el rescate al 100% sin devaluación de la empresa aunque esta cayera en bolsa hasta por un 100% su valor o en parte proporcional, mientras empata y genera plus valia.Al referirme como empate hago mencion a que las que no tenian el mismo valor de las de inicialozacion primera en su maximo historico del día  deberan adaptarse y enrolarse a la hora de generar ganacia hasta que llegue al maximo historico del dia o graduaomente en base a las cantidades que entraron por determinados valores variados en su plus valia una vez recuperada su inversión  entonces cobrar lo proporcional en retorno (vendiendo lp contabilizado por esas cantidades o biem esperar a que suba al 100% y supere su valor que esto podria demorar mas de lo esperado y en caso de necesitar liquidez no la tendrás.<br>La lógica de esta estrategia dice que si entre las cantidades que se restan como: comisiones del broker por compra y venta, los resagos que lad paguen, el incremento de acciones de una misma fuente interna y el restaurar la liquidez con que se inicio... Deberan pasar  2 efectos:(1)Incrementar lad acciones mismas que deben sugregar las devaluacionesy emptar por unas cuantad exttas las que se concideran ganacias y (2) Si el sistema tras estas maniobrad restablece la liquidez se suman las dos (acciones y liquidez) para genersr una formula llamada (Incrementos por ganancia en proceso IPEP) si resuotara que el proceso dio resuotado el siguiente paso es observar lad posibles causas que generaron dicha formula que genero ganacias y repetirla concantidades mas grandes cada vez esta es la manera de incrementar el dinero desde el interior mas si dicha formula nogenera valores negativos perp los positivos en ganancia resuotaran ser muy pocas a corto plazo y si la idea es incrementar desde el exterior, se debera hacer para el fin de conseguir que lasbganancias sesn mas altas. debes observar cuanto pagaste en el dia en comisiones, cuanto se devaluo o se gano y equilibrarsus valores.</option></select>");	
-						
-						document.write("<h5><br>(Maximos historicos alza) &nbsp &nbsp &nbsp  &nbsp Ganancias por plus valia</h5>");
+				document.write("&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp	");
+				document.write (liquidez);
+
+
+
+   document.write("<h1>📶Alsista</h1>");
+
+document.write("<br><br><h6>Precio &nbsp &nbsp  Cantidad acciones &nbsp &nbsp Total &nbsp &nbsp Maxhist &nbsp &nbsp Liquidez &nbsp &nbsp incubados</h6>");
+
+document.write ("<br>⬇ &nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ⬇<br><br>");
+
+document.write (Inicializacion);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp"+cantidadacc);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+totale);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+maxhist);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+liquidez);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+incubados);
+
+
+	}
+//Aquí va ir 1 de p1 llave neg
+
+if (elegirposition==2){
+
+inicio2=prompt("Ingresa el inicio2 (sólo si lo hay de lo contrario dejar en blanco o cancelar");
+
+cantidadacc=prompt("Ingresa la catidad de acciones que tienes al momento ");
+				
+liquidez=prompt("Ingrese la liquidez que tienes actualmente en estrategia acciones");
+
+totale=prompt("Ingresa el total que aparece en tu estrategia");
+
+maxhist=prompt("Ingresa el Máximo Histórico");
+
+incubados=prompt("Ingresa la cantidad nueva de incubados");
+document.write("<h3>Sistema Rescate Gicsa</h3><h5>(Comisiones GBM+) &nbsp &nbsp  &nbsp Cantidad de liquidez en estrategia </h5>");	
+
+
+document.write("<h3>Sistema Rescate Gicsa</h3><h5>(Comisiones GBM+) &nbsp &nbsp  &nbsp Cantidad de liquidez en estrategia Famsa</h5>");		
+				document.write("P2:\t $"+0.25*inicio2/100);
+				document.write("<br>Cantidad acciones al momento:\t"+cantidadacc);
+				document.write("<br>Mulplicado en dinero:"+cantidadacc*inicio2);
+				
+					
+				document.write("&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp	");
+				document.write (liquidez);
+
+   document.write("<h1>📶Alsista</h1>");
+
+document.write("<br><br><h6>Precio &nbsp &nbsp  Cantidad acciones &nbsp &nbsp Total &nbsp &nbsp Maxhist &nbsp &nbsp Liquidez &nbsp &nbsp incubados</h6>");
+
+document.write ("<br>⬇ &nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ⬇<br><br>");
+
+document.write (inicio2);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp"+cantidadacc);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+totale);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+maxhist);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+liquidez);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+incubados);
+
+
+
+}
+//position 2 Aquí va llave neg
+
+
+				
+if(elegirposition==3){
+
+inicio3=prompt("Ingresa el inicio 3(sólo si lo hay de lo contrario dejar en blanco o cancelar");	
+
+
+
+cantidadacc=prompt("Ingresa la catidad de acciones que tienes al momento ");
+				
+liquidez=prompt("Ingrese la liquidez que tienes actualmente en estrategia acciones");
+
+totale=prompt("Ingresa el total que aparece en tu estrategia");
+
+maxhist=prompt("Ingresa el Máximo Histórico");
+
+incubados=prompt("Ingresa la cantidad nueva de incubados");
+document.write("<h3>Sistema Rescate Gicsa</h3><h5>(Comisiones GBM+) &nbsp &nbsp  &nbsp Cantidad de liquidez en estrategia </h5>");	
+
+
+document.write("<h3>Sistema Rescate Gicsa</h3><h5>(Comisiones GBM+) &nbsp &nbsp  &nbsp Cantidad de liquidez en estrategia acciones</h5>");		
+				document.write("P2:\t $"+0.25*inicio3/100);
+				document.write("<br>Cantidad acciones al momento:\t"+cantidadacc);
+				document.write("<br>Mulplicado en dinero:"+cantidadacc*inicio3);
+				
+					
+				document.write("&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp	");
+				document.write (liquidez);
+
+   document.write("<h1>📶Alsista</h1>");
+
+document.write("<br><br><h6>Precio &nbsp &nbsp  Cantidad acciones &nbsp &nbsp Total &nbsp &nbsp Maxhist &nbsp &nbsp Liquidez &nbsp &nbsp incubados</h6>");
+
+document.write ("<br>⬇ &nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ⬇<br><br>");
+
+document.write (inicio3);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp"+cantidadacc);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+totale);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+maxhist);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+liquidez);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+incubados);
+
+
+}
+//Position 3 aquí va llave neg
+
+
+if (elegirposition==4){
+
+inicio4=prompt("Ingresa el inicio 4 (sólo si lo hay de lo contrario dejar en blanco o cancelar");	
+
+cantidadacc=prompt("Ingresa la catidad de acciones que tienes al momento ");
+				
+liquidez=prompt("Ingrese la liquidez que tienes actualmente en estrategia acciones");
+
+totale=prompt("Ingresa el total que aparece en tu estrategia");
+
+maxhist=prompt("Ingresa el Máximo Histórico");
+
+incubados=prompt("Ingresa la cantidad nueva de incubados");
+document.write("<h3>Sistema Rescate Gicsa</h3><h5>(Comisiones GBM+) &nbsp &nbsp  &nbsp Cantidad de liquidez en estrategia </h5>");	
+
+
+document.write("<h3>Sistema Rescate Gicsa</h3><h5>(Comisiones GBM+) &nbsp &nbsp  &nbsp Cantidad de liquidez en estrategia acciones</h5>");		
+				document.write("P2:\t $"+0.25*inicio4/100);
+				document.write("<br>Cantidad acciones al momento:\t"+cantidadacc);
+				document.write("<br>Mulplicado en dinero:"+cantidadacc*inicio4);
+				
+					
+				document.write("&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp	");
+				document.write (liquidez);
+
+   document.write("<h1>📶Alsista</h1>");
+
+document.write("<br><br><h6>Precio &nbsp &nbsp  Cantidad acciones &nbsp &nbsp Total &nbsp &nbsp Maxhist &nbsp &nbsp Liquidez &nbsp &nbsp incubados</h6>");
+
+document.write ("<br>⬇ &nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ⬇<br><br>");
+
+document.write (inicio4);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp"+cantidadacc);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+totale);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+maxhist);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+liquidez);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+incubados);
+
+
+}
+//Aquí va opcion4 llave neg
+
+}
+//negativo llave 2
+
+}
+//llave decisión 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+if (decision==2){
+
+negpos=prompt ("Elegir negativo o positivo en posiciones\n1.Negativo\n2.Positivo");
+
+if (negpos==1){
+
+elegirposition=prompt("Elige la position en que vas\n1.P1\n2.P2\n3.P3\n4.P4");
 	
-		
-			var d=new Date();
-var dia=new Array(7);
-dia[0]="Domingo";
-dia[1]="Lunes";
-dia[2]="Martes";
-dia[3]="Miercoles";
-dia[4]="Jueves";
-dia[5]="Viernes";
-dia[6]="Sabado";
-document.write("Hoy es: " + dia[d.getDay()]);
+if (elegirposition==1){
+			cantidadacc=prompt("Ingresa la catidad de acciones que tienes al momento ");
+				
+liquidez=prompt("Ingrese la liquidez que tienes actualmente en estrategia acciones");
+
+Inicializacion=prompt("Ingresa la inicializacion del costo de la accion (p1)");
+
+totale=prompt("Ingresa el total que aparece en tu estrategia");
+
+maxhist=prompt("Ingresa el Máximo Histórico");
+
+incubados=prompt("Ingresa la cantidad nueva de incubados");
+document.write("<h3>Sistema Rescate Gicsa</h3><h5>(Comisiones GBM+) &nbsp &nbsp  &nbsp Cantidad de liquidez en estrategia </h5>");		
+				document.write("P1:\t $"+0.25*Inicializacion/100);
+				document.write("<br>Cantidad acciones al momento:\t"+cantidadacc);
+				document.write("<br>Mulplicado en dinero:"+cantidadacc*Inicializacion);
+				
+					
+				document.write("&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp	");
+				document.write (liquidez);
+
+
+
+   document.write("<h1>BAJISTA⤵</h1>");
+
+document.write("<br><br><h6>Precio &nbsp &nbsp  Cantidad acciones &nbsp &nbsp Total &nbsp &nbsp Maxhist &nbsp &nbsp Liquidez &nbsp &nbsp incubados</h6>");
+
+document.write ("<br>⬇ &nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ⬇<br><br>");
+
+document.write (Inicializacion);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp"+cantidadacc);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+totale);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+maxhist);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+liquidez);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+incubados);
+
+
+	}
+//Aquí va ir 1 de p1 llave
+
+if (elegirposition==2){
+
+inicio2=prompt("Ingresa el inicio2 (sólo si lo hay de lo contrario dejar en blanco o cancelar");
+
+cantidadacc=prompt("Ingresa la catidad de acciones que tienes al momento ");
+				
+liquidez=prompt("Ingrese la liquidez que tienes actualmente en estrategia acciones");
+
+totale=prompt("Ingresa el total que aparece en tu estrategia");
+
+maxhist=prompt("Ingresa el Máximo Histórico");
+
+incubados=prompt("Ingresa la cantidad nueva de incubados");
+document.write("<h3>Sistema Rescate Gicsa</h3><h5>(Comisiones GBM+) &nbsp &nbsp  &nbsp Cantidad de liquidez en estrategia </h5>");	
+
+
+document.write("<h3>Sistema Rescate Gicsa</h3><h5>(Comisiones GBM+) &nbsp &nbsp  &nbsp Cantidad de liquidez en estrategia Famsa</h5>");		
+				document.write("P2:\t $"+0.25*inicio2/100);
+				document.write("<br>Cantidad acciones al momento:\t"+cantidadacc);
+				document.write("<br>Mulplicado en dinero:"+cantidadacc*inicio2);
+				
+					
+				document.write("&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp	");
+				document.write (liquidez);
+
+   document.write("<h1>BAJISTA⤵</h1>");
+
+document.write("<br><br><h6>Precio &nbsp &nbsp  Cantidad acciones &nbsp &nbsp Total &nbsp &nbsp Maxhist &nbsp &nbsp Liquidez &nbsp &nbsp incubados</h6>");
+
+document.write ("<br>⬇ &nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ⬇<br><br>");
+
+document.write (inicio2);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp"+cantidadacc);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+totale);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+maxhist);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+liquidez);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+incubados);
+
+
+
+}
+//position 2 Aquí va llave
+
+
+				
+if(elegirposition==3){
+
+inicio3=prompt("Ingresa el inicio 3(sólo si lo hay de lo contrario dejar en blanco o cancelar");	
+
+
+
+cantidadacc=prompt("Ingresa la catidad de acciones que tienes al momento ");
+				
+liquidez=prompt("Ingrese la liquidez que tienes actualmente en estrategia acciones");
+
+totale=prompt("Ingresa el total que aparece en tu estrategia");
+
+maxhist=prompt("Ingresa el Máximo Histórico");
+
+incubados=prompt("Ingresa la cantidad nueva de incubados");
+document.write("<h3>Sistema Rescate Gicsa</h3><h5>(Comisiones GBM+) &nbsp &nbsp  &nbsp Cantidad de liquidez en estrategia </h5>");	
+
+
+document.write("<h3>Sistema Rescate Gicsa</h3><h5>(Comisiones GBM+) &nbsp &nbsp  &nbsp Cantidad de liquidez en estrategia acciones</h5>");		
+				document.write("P2:\t $"+0.25*inicio3/100);
+				document.write("<br>Cantidad acciones al momento:\t"+cantidadacc);
+				document.write("<br>Mulplicado en dinero:"+cantidadacc*inicio3);
+				
+					
+				document.write("&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp	");
+				document.write (liquidez);
+
+   document.write("<h1>BAJISTA⤵</h1>");
+
+document.write("<br><br><h6>Precio &nbsp &nbsp  Cantidad acciones &nbsp &nbsp Total &nbsp &nbsp Maxhist &nbsp &nbsp Liquidez &nbsp &nbsp incubados</h6>");
+
+document.write ("<br>⬇ &nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ⬇<br><br>");
+
+document.write (inicio3);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp"+cantidadacc);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+totale);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+maxhist);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+liquidez);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+incubados);
+
+
+}
+//Position 3 aquí va llave
+
+
+if (elegirposition==4){
+
+inicio4=prompt("Ingresa el inicio 4 (sólo si lo hay de lo contrario dejar en blanco o cancelar");	
+
+cantidadacc=prompt("Ingresa la catidad de acciones que tienes al momento ");
+				
+liquidez=prompt("Ingrese la liquidez que tienes actualmente en estrategia acciones");
+
+totale=prompt("Ingresa el total que aparece en tu estrategia");
+
+maxhist=prompt("Ingresa el Máximo Histórico");
+
+incubados=prompt("Ingresa la cantidad nueva de incubados");
+document.write("<h3>Sistema Rescate Gicsa</h3><h5>(Comisiones GBM+) &nbsp &nbsp  &nbsp Cantidad de liquidez en estrategia </h5>");	
+
+
+document.write("<h3>Sistema Rescate Gicsa</h3><h5>(Comisiones GBM+) &nbsp &nbsp  &nbsp Cantidad de liquidez en estrategia acciones</h5>");		
+				document.write("P2:\t $"+0.25*inicio4/100);
+				document.write("<br>Cantidad acciones al momento:\t"+cantidadacc);
+				document.write("<br>Mulplicado en dinero:"+cantidadacc*inicio4);
+				
+					
+				document.write("&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp	");
+				document.write (liquidez);
+
+   document.write("<h1>BAJISTA⤵</h1>");
+
+document.write("<br><br><h6>Precio &nbsp &nbsp  Cantidad acciones &nbsp &nbsp Total &nbsp &nbsp Maxhist &nbsp &nbsp Liquidez &nbsp &nbsp incubados</h6>");
+
+document.write ("<br>⬇ &nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ⬇<br><br>");
+
+document.write (inicio4);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp"+cantidadacc);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+totale);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+maxhist);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+liquidez);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+incubados);
+
+
+}
+//Aquí va opcion4 llave
+
+}
+//negativo acceso 1						
+										
+										
+									
+										
+										
+										
+										
+										
+										
+									
+										
+									
+				
+if (negpos==2){	
+
+	elegirposition=prompt("Elige la position en que vas\n1.P1\n2.P2\n3.P3\n4.P4");
 			
-			var d = new Date();
-		document.write("\t"+d.getDate());
-		document.write("\tDia de operación<br>");
-		
-var d = new Date();
-document.write(d.getHours());
-document.write(":\t");
-
-
-var d = new Date(); document.write(d.getMinutes());
-document.write(":\t");
-
-var d = new Date(); document.write(d.getFullYear());
-
-		
-		
-
-document.write("<br><br>p4\t✅\tNewmh &nbsp &nbsp &nbsp &nbsp &nbsp"+inicio4);	
-
-		
-
-document.write("<br>");		
-	document.write("p3\t✅"+inicio3+"&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp\tGan");
-	document.write(inicio3-inicio4);
-
-document.write("<br>");		
-			
-
-	document.write("p2\t✅"+inicio2+"📶&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspGan")
-	document.write(inicio2-inicio3);
-
-document.write("<br>");		
 				
-	document.write("p1\t✅"+Inicializacion+"📶&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspEmp");
-	
-	document.write(Inicializacion-inicio2neg);
-	
-	//al alza seccion
+if (elegirposition==1){
+			cantidadacc=prompt("Ingresa la catidad de acciones que tienes al momento ");
+				
+liquidez=prompt("Ingrese la liquidez que tienes actualmente en estrategia acciones");
 
-document.write("<hr>");
+Inicializacion=prompt("Ingresa la inicializacion del costo de la accion (p1)");
 
+totale=prompt("Ingresa el total que aparece en tu estrategia");
 
-document.write("<h5>Mínimos históricos bajas)&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Sobrante al max hist anterior</h5>");
-document.write("p1:\t✅"+Inicializacion+"⤵");
-document.write("&nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp");
-			document.write (	inicio2neg-Inicializacion);
+maxhist=prompt("Ingresa el Máximo Histórico");
 
-
-
-
-
-document.write("<br>");		
-	document.write("p2\t✅"+inicio2neg);
-	document.write("&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ");
-document.write(inicio2neg-inicio3neg);
+incubados=prompt("Ingresa la cantidad nueva de incubados");
+document.write("<h3>Sistema Rescate Gicsa</h3><h5>(Comisiones GBM+) &nbsp &nbsp  &nbsp Cantidad de liquidez en estrategia </h5>");		
+				document.write("P1:\t $"+0.25*Inicializacion/100);
+				document.write("<br>Cantidad acciones al momento:\t"+cantidadacc);
+				document.write("<br>Mulplicado en dinero:"+cantidadacc*Inicializacion);
+				
+					
+				document.write("&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp	");
+				document.write (liquidez);
 
 
-document.write("<br>");		
-	
-	document.write("p3\t✅"+inicio3neg);
-	document.write("&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ");
-document.write(inicio3neg-inicio4neg);
+
+   document.write("<h1>📶Alsista</h1>");
+
+document.write("<br><br><h6>Precio &nbsp &nbsp  Cantidad acciones &nbsp &nbsp Total &nbsp &nbsp Maxhist &nbsp &nbsp Liquidez &nbsp &nbsp incubados</h6>");
+
+document.write ("<br>⬇ &nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ⬇<br><br>");
+
+document.write (Inicializacion);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp"+cantidadacc);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+totale);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+maxhist);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+liquidez);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+incubados);
 
 
-document.write("<br>");		
+	}
+//Aquí va ir 1 de p1 llave neg
 
-document.write("p3\t✅"+inicio4neg);
+if (elegirposition==2){
 
+inicio2=prompt("Ingresa el inicio2 (sólo si lo hay de lo contrario dejar en blanco o cancelar");
+
+cantidadacc=prompt("Ingresa la catidad de acciones que tienes al momento ");
+				
+liquidez=prompt("Ingrese la liquidez que tienes actualmente en estrategia acciones");
+
+totale=prompt("Ingresa el total que aparece en tu estrategia");
+
+maxhist=prompt("Ingresa el Máximo Histórico");
+
+incubados=prompt("Ingresa la cantidad nueva de incubados");
+document.write("<h3>Sistema Rescate Gicsa</h3><h5>(Comisiones GBM+) &nbsp &nbsp  &nbsp Cantidad de liquidez en estrategia </h5>");	
+
+
+document.write("<h3>Sistema Rescate Gicsa</h3><h5>(Comisiones GBM+) &nbsp &nbsp  &nbsp Cantidad de liquidez en estrategia Famsa</h5>");		
+				document.write("P2:\t $"+0.25*inicio2/100);
+				document.write("<br>Cantidad acciones al momento:\t"+cantidadacc);
+				document.write("<br>Mulplicado en dinero:"+cantidadacc*inicio2);
+				
+					
+				document.write("&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp	");
+				document.write (liquidez);
+
+   document.write("<h1>📶Alsista</h1>");
+
+document.write("<br><br><h6>Precio &nbsp &nbsp  Cantidad acciones &nbsp &nbsp Total &nbsp &nbsp Maxhist &nbsp &nbsp Liquidez &nbsp &nbsp incubados</h6>");
+
+document.write ("<br>⬇ &nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ⬇<br><br>");
+
+document.write (inicio2);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp"+cantidadacc);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+totale);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+maxhist);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+liquidez);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+incubados);
 
 
 
 }
-
-else {
-alert("Por favor elige una opcion\n1.Estrategia Aeromex\n2.Estrategia Famsa\n⚠Asegurate que aun este disponible");
-}
-
-}
+//position 2 Aquí va llave neg
 
 
-</script>			
-	
-	
-				</center>
 				
+if(elegirposition==3){
+
+inicio3=prompt("Ingresa el inicio 3(sólo si lo hay de lo contrario dejar en blanco o cancelar");	
+
+
+
+cantidadacc=prompt("Ingresa la catidad de acciones que tienes al momento ");
 				
-</body>
+liquidez=prompt("Ingrese la liquidez que tienes actualmente en estrategia acciones");
+
+totale=prompt("Ingresa el total que aparece en tu estrategia");
+
+maxhist=prompt("Ingresa el Máximo Histórico");
+
+incubados=prompt("Ingresa la cantidad nueva de incubados");
+document.write("<h3>Sistema Rescate Gicsa</h3><h5>(Comisiones GBM+) &nbsp &nbsp  &nbsp Cantidad de liquidez en estrategia </h5>");	
+
+
+document.write("<h3>Sistema Rescate Gicsa</h3><h5>(Comisiones GBM+) &nbsp &nbsp  &nbsp Cantidad de liquidez en estrategia acciones</h5>");		
+				document.write("P2:\t $"+0.25*inicio3/100);
+				document.write("<br>Cantidad acciones al momento:\t"+cantidadacc);
+				document.write("<br>Mulplicado en dinero:"+cantidadacc*inicio3);
+				
+					
+				document.write("&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp	");
+				document.write (liquidez);
+
+   document.write("<h1>📶Alsista</h1>");
+
+document.write("<br><br><h6>Precio &nbsp &nbsp  Cantidad acciones &nbsp &nbsp Total &nbsp &nbsp Maxhist &nbsp &nbsp Liquidez &nbsp &nbsp incubados</h6>");
+
+document.write ("<br>⬇ &nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ⬇<br><br>");
+
+document.write (inicio3);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp"+cantidadacc);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+totale);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+maxhist);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+liquidez);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+incubados);
+
+
+}
+//Position 3 aquí va llave neg
+
+
+if (elegirposition==4){
+
+inicio4=prompt("Ingresa el inicio 4 (sólo si lo hay de lo contrario dejar en blanco o cancelar");	
+
+cantidadacc=prompt("Ingresa la catidad de acciones que tienes al momento ");
+				
+liquidez=prompt("Ingrese la liquidez que tienes actualmente en estrategia acciones");
+
+totale=prompt("Ingresa el total que aparece en tu estrategia");
+
+maxhist=prompt("Ingresa el Máximo Histórico");
+
+incubados=prompt("Ingresa la cantidad nueva de incubados");
+document.write("<h3>Sistema Rescate Gicsa</h3><h5>(Comisiones GBM+) &nbsp &nbsp  &nbsp Cantidad de liquidez en estrategia </h5>");	
+
+
+document.write("<h3>Sistema Rescate Gicsa</h3><h5>(Comisiones GBM+) &nbsp &nbsp  &nbsp Cantidad de liquidez en estrategia acciones</h5>");		
+				document.write("P2:\t $"+0.25*inicio4/100);
+				document.write("<br>Cantidad acciones al momento:\t"+cantidadacc);
+				document.write("<br>Mulplicado en dinero:"+cantidadacc*inicio4);
+				
+					
+				document.write("&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp	");
+				document.write (liquidez);
+
+   document.write("<h1>📶Alsista</h1>");
+
+document.write("<br><br><h6>Precio &nbsp &nbsp  Cantidad acciones &nbsp &nbsp Total &nbsp &nbsp Maxhist &nbsp &nbsp Liquidez &nbsp &nbsp incubados</h6>");
+
+document.write ("<br>⬇ &nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ⬇&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ⬇<br><br>");
+
+document.write (inicio4);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp"+cantidadacc);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+totale);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+maxhist);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+liquidez);
+
+document.write ("&nbsp &nbsp &nbsp &nbsp"+incubados);
+
+
+}
+//Aquí va opcion4 llave neg
+
+}
+//negativo llave 2
+
+}
+//llave decisión 2
+
+document.write ("<br><br><br ><hr>");
+
+
+}
+//llave bucle for para 4
+
+
+}
+//llave de función de
+
+</script>
+
+
+	</body>
 </html>	
 				
+		
+	
+					
+																																					
+						<!DOCTYPE html>
+
 		
 	
